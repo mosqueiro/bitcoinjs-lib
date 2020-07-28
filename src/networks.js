@@ -11,6 +11,17 @@ exports.bitcoin = {
   scriptHash: 0x05,
   wif: 0x80,
 };
+exports.zcore = {
+  messagePrefix: '\x18DarkNet Signed Message:\n',
+  messagePrefix: 'unused',
+  bip32: {
+    public: 0x04B24746,
+    private: 0x04B24308
+  },
+  pubKeyHash: 0x8E,
+  scriptHash: 0x91,
+  wif: 0x50
+};
 exports.regtest = {
   messagePrefix: '\x18Bitcoin Signed Message:\n',
   bech32: 'bcrt',
